@@ -1,3 +1,7 @@
+@extends('layout')
+@section('title',"Danh sách loại")
+
+@section('content')
 <section class="wrapper">
     <div class="panel panel-body">
         <section class="content">
@@ -10,4 +14,5 @@
             </div>
         </section>
     </div>
-    </section>
+</section>
+@endsection

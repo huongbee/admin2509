@@ -11,6 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::group(['prefix'=>'admin'],function(){
+
+    // admin/type
+    Route::get('/type',[
+        'uses'=>'AdminController@getListType',
+        'as'=>'list_type'
+    ]);
+
 });
+
