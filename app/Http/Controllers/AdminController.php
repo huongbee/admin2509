@@ -8,7 +8,7 @@ use App\FoodType;
 class AdminController extends Controller
 {
     function getListType(){
-        $types = FoodType::all();
+        $types = FoodType::paginate(5);
         return view('pages.list-type',compact('types'));
     }
 }
